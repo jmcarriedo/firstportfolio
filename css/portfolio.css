@@ -1,0 +1,141 @@
+#portfolio .portfolio-item {
+  max-width: 26rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  #portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 245, 245, 0.7);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+  }
+
+  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 1.05rem;
+    color: black;
+  }
+  #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+  }
+  #portfolio .portfolio-item .portfolio-caption {
+    padding: 1.05rem;
+    text-align: center;
+    background-color:whitesmoke;
+  }
+  #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+    font-size: 1.05rem;
+    font-family: "Recoleta", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+    font-style: italic;
+    font-family: "Recoleta", sans-serif;
+  }
+  
+  .portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .portfolio-modal .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    font-family: "Recoleta", sans-serif;
+  }
+  .portfolio-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Recoleta", sans-serif;
+    
+  }
+  .portfolio-modal .modal-content p {
+    margin-bottom: 2rem;
+    font-family: "Recoleta", sans-serif;
+  }
+  .portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+    font-family: "Recoleta", sans-serif;
+  }
+  .portfolio-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+  .portfolio-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    
+  }
+  .portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
+ 
+  /* @media screen and (max-width:575px) {
+
+    #portfolio .portfolio-item {
+      max-width: 18rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgb(245, 245, 245, 0.7);
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity ease-in-out 0.25s;
+    }
+    #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+      font-size: .5rem;
+      color: black;
+    }
+    #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+      opacity: 1;
+    }
+    #portfolio .portfolio-item .portfolio-caption {
+      padding: .5rem;
+      text-align: center;
+      background-color:whitesmoke;
+    }
+    #portfolio .portfolio-item .portfolio-caption {
+      font-size: 0.7rem;
+      font-family: "Recoleta", sans-serif;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    #portfolio .portfolio-item .portfolio-caption-heading {
+      font-size: 1.05rem;
+      font-family: "Recoleta", sans-serif;
+      font-weight: 700;
+      margin-bottom: 0;
+  }
+  } */
+
+  

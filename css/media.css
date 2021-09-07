@@ -1,0 +1,217 @@
+@media screen and (max-width:680px) {
+  #portfolio .work-container {
+    max-height: 100vh;
+    overflow: auto;
+  }
+
+  #contact h1 {
+    padding-top: 60px;
+  }
+
+  #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width:1208px) {
+  #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer img {
+    width: 8%;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+  
+  
+  #about .info {
+    padding-top: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  #home .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home img {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #home .landing .intro .hello {
+    font-size: 60px;
+    font-weight: 400;
+  }
+  
+  #home .landing .intro .name {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  #home .landing .intro .more {
+    font-size: 18px;
+    color: #00b52f;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  #home .landing .intro .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 12rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 10px 10px 0 0;
+            box-shadow: 8px 8px 0 0;
+    padding: 20px 10px;
+    margin-top: -20px;
+  }
+
+  #home .header .nav {
+    display:none;
+  }
+
+
+  #about .accordion-container {
+    padding: 0 80px;
+  }
+ 
+  #about .accordion-container .card .card-body {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  #footer img {
+    width: 8%;
+  }
+
+}
+
+#home .header label{
+  display: none;
+}
+
+#home .header input #check {
+  z-index: 3;
+  display:none;
+}
+
+
+@media (max-width: 768px) {
+  #home .header .nav {
+    display: none;
+  }
+ 
+  #home .header label {
+    padding-right: 100px;
+    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    transition-property: color;
+  }
+  #home .header label:hover {
+    color: #00b52f;
+  }
+  #home .header label .close-btn {
+    display: none;
+  }
+
+  #check:checked ~ #home .header .nav .navigation {
+    z-index: 2;
+    position: fixed;
+    background: #00b52f;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~ #home .header .nav a {
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+
+  #check:checked ~ #home .header label .menu-btn{
+    display: none;
+  }
+  
+  #check:checked ~ #home .header label .close-btn{
+    z-index: 2;
+    display: block;
+    position: fixed;
+  }
+
+  #home .header label .menu-btn{
+    position: absolute;
+  }
+}
+
+
+
+/* css for scroll btn*/
+.myBtn {
+  background-color: black;
+  border: none;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom-right corner */
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+
+  /* keep it at the top of everything else */
+  z-index: 100;
+
+  /* hide with opacity */
+  opacity: 0;
+
+  /* also add a translate effect */
+  transform: translateY(100px);
+
+  /* and a transition */
+  transition: all .5s ease
+}
+
+
